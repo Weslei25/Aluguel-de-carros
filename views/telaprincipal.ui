@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>911</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>80</y>
+         <width>491</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>img/carro-esporte.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>410</y>
+         <width>570</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>42</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Vender</string>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+          <property name="default">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Alugar</string>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+          <property name="default">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>Editar</string>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+          <property name="default">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>Contas</string>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+          <property name="default">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="text">
+           <string>Relatorios</string>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+          <property name="default">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>911</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionSair"/>
+    <addaction name="actionSalvar"/>
+   </widget>
+   <widget class="QMenu" name="menuVender">
+    <property name="title">
+     <string>Vender</string>
+    </property>
+    <addaction name="actionCarros_usados"/>
+    <addaction name="actionCarros_novos"/>
+   </widget>
+   <widget class="QMenu" name="menuAlugar">
+    <property name="title">
+     <string>Alugar</string>
+    </property>
+    <addaction name="actionCarros_usados_2"/>
+    <addaction name="actionCarros_novos_2"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="actionCadastro_de_clientes"/>
+    <addaction name="actionCadastro_de_veiculos"/>
+   </widget>
+   <widget class="QMenu" name="menuContas">
+    <property name="title">
+     <string>Contas</string>
+    </property>
+    <addaction name="actionA_receber"/>
+    <addaction name="actionA_pagar"/>
+    <addaction name="actionA_vencer"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuVender"/>
+   <addaction name="menuAlugar"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuContas"/>
+  </widget>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+  <action name="actionCarros_usados">
+   <property name="text">
+    <string>Carros usados</string>
+   </property>
+  </action>
+  <action name="actionCarros_novos">
+   <property name="text">
+    <string>Carros novos</string>
+   </property>
+  </action>
+  <action name="actionCarros_usados_2">
+   <property name="text">
+    <string>Carros usados</string>
+   </property>
+  </action>
+  <action name="actionCarros_novos_2">
+   <property name="text">
+    <string>Carros novos</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_clientes">
+   <property name="text">
+    <string>Cadastro de clientes</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_veiculos">
+   <property name="text">
+    <string>Cadastro de veiculos</string>
+   </property>
+  </action>
+  <action name="actionA_receber">
+   <property name="text">
+    <string>A receber</string>
+   </property>
+  </action>
+  <action name="actionA_pagar">
+   <property name="text">
+    <string>A pagar</string>
+   </property>
+  </action>
+  <action name="actionA_vencer">
+   <property name="text">
+    <string>A vencer</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
