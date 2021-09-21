@@ -48,13 +48,16 @@
     </property>
     <item row="0" column="0">
      <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(207, 220, 255);</string>
+      </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
       </property>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <layout class="QGridLayout" name="gridLayout_2">
+      <layout class="QGridLayout" name="gridLayout_4">
        <property name="leftMargin">
         <number>0</number>
        </property>
@@ -64,189 +67,319 @@
        <property name="rightMargin">
         <number>0</number>
        </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-       <item row="0" column="1">
-        <widget class="QLabel" name="label">
-         <property name="maximumSize">
-          <size>
-           <width>491</width>
-           <height>311</height>
-          </size>
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
          </property>
-         <property name="text">
-          <string/>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
          </property>
-         <property name="pixmap">
-          <pixmap>../img/carro-esporte.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>5</width>
+              <height>4</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>1000</width>
+              <height>500</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../img/red-color-lighting-particle-view-of-modern-luxury-white-car-parked-indoors-at-daytime (1).jpg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
-       <item row="1" column="1">
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <property name="spacing">
-          <number>50</number>
-         </property>
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <widget class="QPushButton" name="pushButton">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>35</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>100</width>
-             <height>16777215</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Vender</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../img/icones/icons/money_add.png</normaloff>../img/icones/icons/money_add.png</iconset>
-           </property>
-           <property name="autoDefault">
-            <bool>true</bool>
-           </property>
-           <property name="default">
-            <bool>true</bool>
-           </property>
-           <property name="flat">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_2">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>35</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Alugar</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../img/icones/icons/car_add.png</normaloff>../img/icones/icons/car_add.png</iconset>
-           </property>
-           <property name="autoDefault">
-            <bool>true</bool>
-           </property>
-           <property name="default">
-            <bool>true</bool>
-           </property>
-           <property name="flat">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_3">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>35</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Editar</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../img/icones/icons/paste_plain.png</normaloff>../img/icones/icons/paste_plain.png</iconset>
-           </property>
-           <property name="autoDefault">
-            <bool>true</bool>
-           </property>
-           <property name="default">
-            <bool>true</bool>
-           </property>
-           <property name="flat">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_4">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>35</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Contas</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../img/icones/icons/coins_add.png</normaloff>../img/icones/icons/coins_add.png</iconset>
-           </property>
-           <property name="autoDefault">
-            <bool>true</bool>
-           </property>
-           <property name="default">
-            <bool>true</bool>
-           </property>
-           <property name="flat">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_5">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>35</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Relatorios</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../img/icones/icons/page_excel.png</normaloff>../img/icones/icons/page_excel.png</iconset>
-           </property>
-           <property name="autoDefault">
-            <bool>true</bool>
-           </property>
-           <property name="default">
-            <bool>true</bool>
-           </property>
-           <property name="flat">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="0" column="0">
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
+       <item row="1" column="0">
+        <widget class="QFrame" name="frame_2">
+         <property name="minimumSize">
           <size>
-           <width>72</width>
-           <height>20</height>
+           <width>901</width>
+           <height>100</height>
           </size>
          </property>
-        </spacer>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="spacing">
+             <number>27</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="cadastrarCarro">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>67</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Shell Dlg 2</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Cadastrar</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../img/cadastro.png</normaloff>../img/cadastro.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>50</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoDefault">
+               <bool>true</bool>
+              </property>
+              <property name="default">
+               <bool>true</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="venderCarro">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>67</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Shell Dlg 2</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Vender</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../img/icones-de-dinheiro.png</normaloff>../img/icones-de-dinheiro.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>43</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoDefault">
+               <bool>true</bool>
+              </property>
+              <property name="default">
+               <bool>true</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="alugarCarro">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>67</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Shell Dlg 2</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Alugar</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../img/alugar-um-carro.png</normaloff>../img/alugar-um-carro.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>49</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoDefault">
+               <bool>true</bool>
+              </property>
+              <property name="default">
+               <bool>true</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="editarCarro">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>67</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Shell Dlg 2</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Editar</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../img/editar-arquivo.png</normaloff>../img/editar-arquivo.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>54</width>
+                <height>53</height>
+               </size>
+              </property>
+              <property name="autoDefault">
+               <bool>true</bool>
+              </property>
+              <property name="default">
+               <bool>true</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="contas">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>67</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Shell Dlg 2</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Contas</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../img/salario.png</normaloff>../img/salario.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>43</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoDefault">
+               <bool>true</bool>
+              </property>
+              <property name="default">
+               <bool>true</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="geraRelatorio">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>67</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>MS Shell Dlg 2</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Relatorios</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../img/excel.png</normaloff>../img/excel.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>44</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoDefault">
+               <bool>true</bool>
+              </property>
+              <property name="default">
+               <bool>true</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -259,7 +392,7 @@
      <x>0</x>
      <y>0</y>
      <width>911</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArquivo">

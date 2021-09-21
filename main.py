@@ -1,28 +1,32 @@
 from views.telaprincipal import Ui_MainWindow
-from controller.db import DataBase
 from PyQt5 import QtWidgets
 from controller.vendas import Vendas
+from controller.cadastrodeveiculos import CadastroVeiculos
 import sys
 import logging
 import os
 
 
 
-
 class AlugarApp(QtWidgets.QMainWindow):# Classe que inicializa o sistema
+    
     def __init__(self, *args, **argvs):# Metodo construtor da aplicação
         super(AlugarApp, self).__init__(*args, **argvs)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.conexao = DataBase()
-        self.conexao.conectardb()
-        self.ui.pushButton.clicked.connect(self.testandocs)
-
+        self.ui.venderCarro.clicked.connect(self.venderveiculo)
+        self.ui.cadastrarCarro.clicked.connect(self.cadastrarveiculo)
         
-    def testandocs(self):
+        
+    def venderveiculo(self):
         self.window = Vendas()
         self.window.show()
         
+
+    def cadastrarveiculo(self):
+        self.window = CadastroVeiculos()
+        self.window.show()
+    
 
 
 if __name__ == "__main__":
@@ -34,7 +38,7 @@ if __name__ == "__main__":
     except Exception as erro:
         pass
     log_format = '%(asctime)s:%(levelname)s:%(filename)s:%(message)s' # Configuracao de logs
-    logging.basicConfig(filename='Logs/Sistema_De_Aluguel_Carros.log',
+    logging.basicConfig(filename='Logs\{}.log'.format(__name__),
                     filemode='w',
                     level=logging.DEBUG,
                     format=log_format,
@@ -42,3 +46,4 @@ if __name__ == "__main__":
     logging.info("Criando a aplicação")
     login.show()
     sys.exit(app.exec_())
+    

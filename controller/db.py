@@ -1,7 +1,7 @@
 import mysql.connector
 
 class DataBase():
-    def __init__(self, host='localhost', user='root', password='0803', db='think', auth_plugin='mysql_native_password'):
+    def __init__(self, host='localhost', user='WESLEI', password='0803', db='vendas', auth_plugin='mysql_native_password'):
         self.host = host
         self.user = user
         self.password = password
