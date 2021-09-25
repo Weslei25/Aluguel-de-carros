@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'c:\Projeto_Weslei\Sistema de aluguel de carros\views\cadastro.ui'
+# Form implementation generated from reading ui file 'c:\Projeto_Weslei\Sistema de aluguel de carros\views\AlugarVeiculo.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.2
 #
@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_cadastro_Veiculos(object):
+class Ui_AlugarVeiculo(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(577, 441)
@@ -171,17 +171,7 @@ class Ui_cadastro_Veiculos(object):
         self.tableWidget_2.setCornerButtonEnabled(True)
         self.tableWidget_2.setObjectName("tableWidget_2")
         self.tableWidget_2.setColumnCount(7)
-        self.tableWidget_2.setRowCount(5)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(0, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(1, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(2, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(3, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_2.setVerticalHeaderItem(4, item)
+        self.tableWidget_2.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(10)
@@ -280,25 +270,14 @@ class Ui_cadastro_Veiculos(object):
         self.label_4.setText(_translate("MainWindow", "Descrição"))
         self.groupBox_3.setTitle(_translate("MainWindow", "Veiculos disponiveis em estoque"))
         self.pushButton_2.setText(_translate("MainWindow", "Pesquisar"))
-        self.comboBox.setItemText(0, _translate("MainWindow", "Todos"))
-        self.comboBox.setItemText(1, _translate("MainWindow", "Codigo"))
-        self.comboBox.setItemText(2, _translate("MainWindow", "Nome"))
-        self.comboBox.setItemText(3, _translate("MainWindow", "Descrição"))
-        self.comboBox.setItemText(4, _translate("MainWindow", "Marca"))
-        self.comboBox.setItemText(5, _translate("MainWindow", "Placa"))
-        self.comboBox.setItemText(6, _translate("MainWindow", "Chassi"))
-        self.comboBox.setItemText(7, _translate("MainWindow", "Ano"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "Codigo"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "Nome"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "Descrição"))
+        self.comboBox.setItemText(3, _translate("MainWindow", "Marca"))
+        self.comboBox.setItemText(4, _translate("MainWindow", "Placa"))
+        self.comboBox.setItemText(5, _translate("MainWindow", "Chassi"))
+        self.comboBox.setItemText(6, _translate("MainWindow", "Ano"))
         self.tableWidget_2.setSortingEnabled(False)
-        item = self.tableWidget_2.verticalHeaderItem(0)
-        item.setText(_translate("MainWindow", "New Row"))
-        item = self.tableWidget_2.verticalHeaderItem(1)
-        item.setText(_translate("MainWindow", "New Row"))
-        item = self.tableWidget_2.verticalHeaderItem(2)
-        item.setText(_translate("MainWindow", "New Row"))
-        item = self.tableWidget_2.verticalHeaderItem(3)
-        item.setText(_translate("MainWindow", "New Row"))
-        item = self.tableWidget_2.verticalHeaderItem(4)
-        item.setText(_translate("MainWindow", "New Row"))
         item = self.tableWidget_2.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "Codigo"))
         item = self.tableWidget_2.horizontalHeaderItem(1)
