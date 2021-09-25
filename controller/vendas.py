@@ -15,10 +15,14 @@ class Vendas(QtWidgets.QMainWindow):# Classe que inicializa o sistema
         self.ui.dateEdit.setDate(dataDeHoje)
         self.ui.dateEdit_2.setDate(dataDeHoje)
         self.ui.pushButton_3.clicked.connect(self.realizarvendanovoveiculo)
+        
 
     def realizarvendanovoveiculo(self):
         try:
-            print('Ola')
+            print(__name__)
+            
+
+
         except Exception as erro:
             QtWidgets.QMessageBox.critical(self, "Erro", "Ocorreu um erro ao tentar realizar a venda do veiculo")
             logging.exception("{}".format(erro))
