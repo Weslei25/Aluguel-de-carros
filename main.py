@@ -7,8 +7,6 @@ import sys
 import logging
 import os
 
-
-
 class AlugarApp(QtWidgets.QMainWindow):# Classe que inicializa o sistema
     
     def __init__(self, *args, **argvs):# Metodo construtor da aplicação
