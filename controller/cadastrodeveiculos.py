@@ -15,7 +15,7 @@ class CadastroVeiculos(QtWidgets.QMainWindow):
         self.log = logging.getLogger(__name__)
         self.log.debug("Inicializando Cadastro de veiculos")
         self.db = DataBase()
-        self.catalogarveiculos()
+        #self.catalogarveiculos()
         self.ui.pushButton_2.clicked.connect(self.pesquisarveiculo)
     
     def set_cadastrarnovoveiculo(self):
