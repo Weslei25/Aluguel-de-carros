@@ -46,7 +46,7 @@ class Ui_MainWindow(object):
         self.label.setMinimumSize(QtCore.QSize(5, 4))
         self.label.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("c:\\Projeto_Weslei\\Sistema de aluguel de carros\\views\\../img/red-color-lighting-particle-view-of-modern-luxury-white-car-parked-indoors-at-daytime (1).jpg"))
+        self.label.setPixmap(QtGui.QPixmap(r".\\img\\image_main.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.gridLayout_3.addWidget(self.label, 0, 0, 1, 1)
